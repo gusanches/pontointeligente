@@ -7,10 +7,10 @@ import java.util.Date
 
 @Document
 data class Lancamento (
-        @Id val id: String? = null,
         val data: Date,
         val tipo: TipoEnum,
         val funcionarioId: String,
         val descricao: String? = "",
-        val localizacao: String? = ""
+        val localizacao: String? = "",
+        @Id val id: String? = null
 )
